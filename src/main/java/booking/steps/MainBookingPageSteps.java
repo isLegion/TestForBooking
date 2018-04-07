@@ -19,8 +19,9 @@ public class MainBookingPageSteps {
         bookingMainPage = factory.get(webDriver, BookingMainPage.class);
     }
 
-    public void openBooking(){
+    public MainBookingPageSteps openBooking(){
         bookingMainPage.go();
+        return this;
     }
 
     public MainBookingPageSteps inputDestination(String destination) {
