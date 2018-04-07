@@ -1,6 +1,6 @@
 # TestForBooking
 
-Using testing tools: **framework htmlelemnts (https://github.com/eroshenkoam/htmlelements) + jUnit4 + hamcrest + maven.** 
+Using testing tools: **Selenium + htmlelemnts2 (https://github.com/eroshenkoam/htmlelements) + jUnit4 + hamcrest + maven.** 
 
 ### Project contains:
 1. Two pages : BookingMainPage(page when we open booking.com) and ResultPage(page after click 'search')
