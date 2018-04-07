@@ -29,7 +29,7 @@ public MainBookingPageSteps(WebDriver webDriver){
     }
 ```
 
-4. ***Fluent*** - using in steps classes. methods return a reference to the step class for the ability to invoke methods sequentially in tests. 
+4. ***Fluent*** - used in steps classes. methods return a reference to the step class for the ability to invoke methods sequentially in tests. 
 ##### Example from project:
 ```
  mainBookingPageSteps
@@ -38,6 +38,14 @@ public MainBookingPageSteps(WebDriver webDriver){
                 .inputDestination("Málaga, Andalucía, Spain")
 ```
 
+### What else could I use to improve the project?
 
+1. **WebDriverManager** - for more convenient work with the webdriver 
+2. **Spring** - for using @Autowired for inject WebDriverManage, steps classes in test classes
+3. **Allure** - for creating reports
+4. **Value object pattern** - for senting value Object instead set of parameters in method (if you using method with many paramenters)
+5. **Object pool pattern** - for creating  instanse of DB, browser, pages before running tests (if we have a lot of tests)
+6. **Add config file** - for setup different parameters for size of browser, environment
+7. **Log4j** - for logging a steps
 
 
