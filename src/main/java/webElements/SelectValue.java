@@ -1,4 +1,4 @@
-package WebElements;
+package webElements;
 
 import io.qameta.htmlelements.context.Context;
 import io.qameta.htmlelements.extension.HandleWith;
@@ -14,17 +14,18 @@ import java.lang.reflect.Method;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-@HandleWith(SelectText.Extension.class)
-public @interface SelectText {
+@HandleWith(SelectValue.Extension.class)
+public @interface SelectValue {
 
     class Extension implements MethodHandler{
 
+        @Override
         public Object handle(Context context, Object proxy, Method method, Object[] args) throws Throwable {
-            String selectedText = (String) args[0];
+            String selectedValue = (String) args[0];
             MineWebElement webElement = (MineWebElement) proxy;
             Select sel = new Select(webElement);
-            if (StringUtils.isNotEmpty(selectedText)) {
-                sel.selectByVisibleText(selectedText);
+            if (StringUtils.isNotEmpty(selectedValue)) {
+                sel.selectByValue(selectedValue);
             } else {
                 sel.selectByIndex(0);
             }

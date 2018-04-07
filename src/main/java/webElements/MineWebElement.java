@@ -1,4 +1,4 @@
-package WebElements;
+package webElements;
 
 /**
  * Created by zsmirnova on 4/6/18.

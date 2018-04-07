@@ -1,4 +1,4 @@
-package WebElements;
+package webElements;
 
 import io.qameta.htmlelements.element.ExtendedWebElement;
 import org.hamcrest.Matcher;

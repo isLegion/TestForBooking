@@ -1,4 +1,4 @@
-package WebElements;
+package webElements;
 
 import io.qameta.htmlelements.context.Context;
 import io.qameta.htmlelements.extension.HandleWith;

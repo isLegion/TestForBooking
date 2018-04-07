@@ -1,6 +1,6 @@
 package booking.pages;
 
-import WebElements.MineWebElement;
+import webElements.MineWebElement;
 import booking.blocks.HotelItem;
 import io.qameta.htmlelements.WebPage;
 import io.qameta.htmlelements.annotation.Description;

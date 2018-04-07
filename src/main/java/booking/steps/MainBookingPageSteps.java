@@ -1,6 +1,6 @@
 package booking.steps;
 
-import WebElements.MineWebElement;
+import webElements.MineWebElement;
 import io.qameta.htmlelements.WebPageFactory;
 import booking.pages.BookingMainPage;
 import org.openqa.selenium.WebDriver;

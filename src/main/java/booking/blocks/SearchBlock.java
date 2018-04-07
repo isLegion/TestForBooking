@@ -1,7 +1,7 @@
 package booking.blocks;
 
-import WebElements.ExtendedMineWebElement;
-import WebElements.MineWebElement;
+import webElements.ExtendedMineWebElement;
+import webElements.MineWebElement;
 import io.qameta.htmlelements.annotation.Description;
 import io.qameta.htmlelements.annotation.FindBy;
 
