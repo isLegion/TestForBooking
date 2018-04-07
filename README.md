@@ -2,6 +2,12 @@
 
 Using testing tools: **framework htmlelemnts (https://github.com/eroshenkoam/htmlelements) + jUnit4 + hamcrest + maven.** 
 
+### Project contains:
+1. Two pages : BookingMainPage(page when we open booking.com) and ResultPage(page after click 'search')
+2. Two step classes : MainBookingPageSteps and ResultPageSteps
+3. Folder 'blocks' which contains blocks in pages
+4. Instance of webdriver is in BaseTest
+
 ### Patterns in project: 
 1. ***Page Object*** - htmlelements easily allows you to organize a structure page object. Pages is devided on blocks in which used relative xpath.
 ##### Example from project:
@@ -40,12 +46,12 @@ public MainBookingPageSteps(WebDriver webDriver){
 
 ### What else could I use to improve the project?
 
-1. **WebDriverManager** - for more convenient work with the webdriver 
-2. **Spring** - for using @Autowired for inject WebDriverManage, steps classes in test classes
-3. **Allure** - for creating reports
+1. **WebDriverManager** (https://github.com/bonigarcia/webdrivermanager) - for more convenient work with the webdriver 
+2. **Spring** (http://www.baeldung.com/spring-autowire) - for using @Autowired for inject WebDriverManage, steps classes in test classes
+3. **Allure** (https://github.com/allure-framework/allure2) - for creating reports
 4. **Value object pattern** - for senting value Object instead set of parameters in method (if you using method with many paramenters)
 5. **Object pool pattern** - for creating  instanse of DB, browser, pages before running tests (if we have a lot of tests)
 6. **Add config file** - for setup different parameters for size of browser, environment
-7. **Log4j** - for logging a steps
+7. **Log4j** (https://github.com/apache/log4j) - for logging a steps
 
 
