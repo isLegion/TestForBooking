@@ -45,7 +45,10 @@ public class BookingTest extends BaseTest {
                 .setCheckboxTravelingForWork()
                 .clickToSearchButton();
         resultPageSteps
-                .setBudgetInFilter("200 +")
+                .setBudgetInFilter("€ 0 - € 50")
+                .setBudgetInFilter("€ 50 - € 100")
+                .setBudgetInFilter("€ 100 - € 150")
+                .setBudgetInFilter("€ 150 - € 200")
                 .setScoreInFilter("8+")
                 .checkHotelsDisplayedInResult();
     }

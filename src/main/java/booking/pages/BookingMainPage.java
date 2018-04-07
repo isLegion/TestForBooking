@@ -21,6 +21,4 @@ public interface BookingMainPage extends WebPage {
     @FindBy("//form[contains(@class, 'sb-searchbox')]")
     SearchBlock searchBlock();
 
-
-
 }
