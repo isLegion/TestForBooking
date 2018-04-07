@@ -1,6 +1,6 @@
 # TestForBooking
 
-### Using testing tools: framework htmlelemnts (https://github.com/eroshenkoam/htmlelements) + jUnit4 + hamcrest + maven. 
+Using testing tools: **framework htmlelemnts (https://github.com/eroshenkoam/htmlelements) + jUnit4 + hamcrest + maven.** 
 
 ### Patterns in project: 
 1. ***Page Object*** - htmlelements easily allows you to organize a structure page object. Pages is devided on blocks in which used relative xpath.
